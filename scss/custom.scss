@@ -1,0 +1,39 @@
+/*
+ * Author-implemented Styles
+ * Custom CSS specific to the site outside of Bootstrap
+ */
+
+// Variable overrides
+$font-family-base: Arial, sans-serif !important;
+
+$sizes: (
+  45: 45%,
+  60: 60%
+);
+
+@import 
+  '../bootstrap/scss/functions',
+  '../bootstrap/scss/variables',
+  '../bootstrap/scss/mixins',
+  '../bootstrap/scss/reboot',
+  '../bootstrap/scss/type',
+  '../bootstrap/scss/grid',
+  '../bootstrap/scss/navbar',
+  '../bootstrap/scss/nav',
+  '../bootstrap/scss/forms',
+  '../bootstrap/scss/buttons',
+  '../bootstrap/scss/utilities';
+
+body {
+  background-color: adjust-color(gray("300"), $blue: 10);
+}
+
+header {
+  background: #3b3b52 url(../bg.jpg) center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+form {
+  width: 45%;
+}
